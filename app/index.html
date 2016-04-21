@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="../bower_components/webcomponentsjs/webcomponents.js"></script>
+    
+    <!--Import All Elements-->
+    <link rel="import" href="elements/elements.html">
+    <link rel="stylesheet" href="styles/main.css">
+    <style is="custom-style" include="shared-styles iron-flex iron-flex-alignment"></style>
+    
+</head>
+    
+<body fullbleed>
+    <paper-drawer-panel>
+        <paper-header-panel drawer>
+            <paper-toolbar>
+            </paper-toolbar>
+                
+            <paper-item class="clickable"><paper-ripple></paper-ripple>Home</paper-item>
+            <paper-item class="clickable"><paper-ripple></paper-ripple>About</paper-item>
+            <paper-item class="clickable"><paper-ripple></paper-ripple>Projects</paper-item>
+            <paper-item class="clickable"><paper-ripple></paper-ripple>People</paper-item>
+            <paper-item class="clickable"><paper-ripple></paper-ripple>Contact</paper-item>
+        </paper-header-panel>
+        <paper-header-panel main>
+            <paper-toolbar>
+                <div>CSA WEB PORTAL V2</div>
+                <span class="flex"></span>
+                <paper-icon-button icon="search"></paper-icon-button>
+                <paper-icon-button icon="home"></paper-icon-button>
+            </paper-toolbar>
+            <div class="input">
+                <paper-material elevation="1" class="form">
+                    <paper-item>Input your personal information</paper-item>
+                    <paper-input label="first name"></paper-input>
+                    <paper-input label="last name"></paper-input>
+                    <paper-input label="email"></paper-input>
+                    <paper-input label="address"></paper-input>
+                    <paper-input label="postal code"></paper-input>
+                    <paper-button raised>Submit</paper-button>
+                    <paper-button raised>Clear</paper-button>
+                </paper-material>
+            </div>
+        </paper-header-panel>
+    </paper-drawer-panel>
+</body>
+</html>
